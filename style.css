@@ -1,0 +1,580 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: greenyellow;
+}
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+nav ul{
+    display: flex; 
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0e7508;
+    font-weight: 600;
+}
+
+.banner {
+    height: 500px;
+    text-align: center;
+}
+
+.banner h1 {
+    margin-top: 10px;
+    color: #0d7008;
+}
+
+.banner button {
+    margin-top: 30px;
+    padding: 10px;
+    width: 400px;
+    border-radius:30px;
+}
+
+.banner h3 {
+    margin-top: 10px;
+    color: #0d7008;
+}
+.banner button:hover {
+    background-color: white;
+}
+
+.box-kiri, .box-tengah, .box-kanan {
+    margin-top: 30px;
+}
+
+main {
+    padding: 20px;
+}
+.form-section, .table-section {
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 5px;
+}
+
+input, select {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 13px;
+    padding: 10px;
+    background-color: #20d723;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgb(32, 237, 59); 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #5ce5ae;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(8px);
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #66f184;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.input-group {
+margin-bottom: 20px;
+position: relative;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+.input-group label {
+position: absolute;
+top: -12px;
+left: 10px;
+font-size: 0.9em;
+color: rgb(32, 178, 88);
+background-color: white;
+backdrop-filter: blur(8px);
+padding: 0 5px;
+z-index: 2;
+}
+.input-group input {
+width: 100%;
+padding: 15px;
+font-size: 1em;
+border: 1px solid #ddd;
+border-radius: 10px;
+outline: none;
+transition: border 0.3s ease-in-out;
+background-color: #f9f9f9;
+width: calc(100% - 30px);
+display: block;
+margin: 0 auto;
+}
+.input-group input:focus {
+border-color: #55dc58;
+box-shadow: 0 0 5px rgba(40, 235, 144, 0.5);
+}
+.action-buttons {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.login-btn {
+background-color: #30ea68;
+color: white;
+padding: 15px;
+font-size: 1.2em;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+width: 100%;
+transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+background-color: rgb(18, 222, 127);
+}
+
+@media screen and (max-width: 600px) {}
+.login-box {
+padding: 30px;
+width: 90%;
+}
+
+h2 {
+font-size: 1.5em;
+}
+
+.login-btn {
+font-size: 1em;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.containers {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(19, 202, 111, 0.1);
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #09cd2d;
+}
+
+section p {
+    font-size: 1rem;
+    color: #34f20e;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #12ea32;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2fe462;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #66f55c;
+}
+
+.banners {
+    color: #0e7508;
+    height: 160px;
+    text-align: center;
+}
+
+ /* Container Flexbox untuk membuat kolom */
+ .containerss {
+    color: #8df19f;
+    display: flex;
+    justify-content: center; /* Mengatur jarak antar kolom */
+    gap: 1px; /* Menambahkan jarak antar elemen */
+    flex-wrap: wrap; /* Membungkus elemen jika ukuran layar lebih kecil */
+}
+
+/* Masing-masing box */
+.box-kanan, .box-kiri, .box-tengah {
+    flex: none; /* Menyebarkan kolom secara merata */
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ccc; /* Memberikan border agar terlihat */
+    background-color: yellowgreen;
+}
+
+.box-tengah:hover {
+    color: #66f55c;
+}
+.box-kanan:hover {
+    color: #66f55c;
+}
+.box-kiri:hover {
+    color: #66f55c;
+}
+
+/* Menambahkan margin dan padding agar tampilan lebih rapi */
+img {
+    max-width: 50%; /* Membatasi lebar gambar agar tidak terlalu besar */
+    height: 50; /* Menjaga rasio gambar */
+}
+
+
+/* Agar responsif pada layar kecil */
+@media (max-width: 400px) {}
+    .container {
+        flex-direction: column; /* Mengubah layout menjadi kolom jika lebar layar kecil */
+    }
+
+/* General Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #59f263;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Table Section Styling */
+.table-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(29, 235, 111, 0.1);
+}
+
+h2 {
+    color: #165933;
+    margin-bottom: 15px;
+}
+
+/* Responsive Table: Enable horizontal scrolling on smaller screens */
+@media (max-width: 768px) {
+    .table-section {
+        padding: 15px;
+    }
+
+    /* Make the table scrollable horizontally on small screens */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        white-space: nowrap; /* Prevent text wrapping inside cells */
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* Mobile Specific Styling */
+@media (max-width: 480px) {
+    th, td {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust heading size */
+    }
+}
+/* Mobile and Tablet Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-box h2 {
+        font-size: 24px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .containerss {
+        flex-direction: column; /* Stack the boxes vertically on small screens */
+        gap: 20px; /* Increase space between stacked boxes */
+    }
+
+    .box {
+        min-width: 100%; /* Boxes take full width on very small screens */
+    }
+
+    .box h2 {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .box p {
+        font-size: 10px; /* Smaller text for mobile */
+    }
+}
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+
+nav img {
+    width: 120px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Login form styles */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-box {
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(79, 235, 48, 0.1);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.action-buttons {
+    text-align: center;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-box {
+        padding: 20px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    nav img {
+        width: 100px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    .login-box h2 {
+        font-size: 18px;
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .login-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+
